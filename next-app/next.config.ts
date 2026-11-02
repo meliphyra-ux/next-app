@@ -9,8 +9,7 @@ const nextConfig: NextConfig = {
   // stay off until then.
   // Scaffolded with --no-agents-md; `next dev` otherwise regenerates
   // AGENTS.md on every run regardless of that flag.
-  agentRules: false,
-  adapterPath: '@nbo/next-adapter/src/adapter.js'
+  agentRules: false
 };
 
 export default nextConfig;
