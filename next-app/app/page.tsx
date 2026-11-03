@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
-    <main>
+    <main style={{'background-color': 'red'}}>
       <h1>NBO Slice 2 SSR fixture</h1>
       <p>This page is server-rendered on every request.</p>
       <MessageContent />
