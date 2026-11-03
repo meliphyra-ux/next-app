@@ -9,9 +9,9 @@ export const revalidate = 2;
 export default function IsrDemoPage() {
   return (
     <main>
-      <h1>NBO Slice 4 ISR fixture</h1>
+      <h1>{process.env.ORG_NAME} Slice 4 ISR fixture</h1>
       {/* eslint-disable-next-line react-hooks/purity -- deliberate: this fixture's whole job is an externally observable value that changes on every real render, to distinguish fresh/stale/regenerated from outside */}
-      <p data-testid="isr-rendered-at">{Date.now()}</p>
+      <p data-testid="isr-rendered-at">{process.env.NEXT_API_NAME} {Date.now()}</p>
     </main>
   );
 }
